@@ -122,11 +122,11 @@ dna2=["ACTTATATCTAGAGTAAAGCCCTGATTCCATTGACGCGATCCCTACCTCCATCATACTCCACAGGTTCTTCAA
 
 k = 15
 t = 20
-best = randomMotifSearch(DNA, k, t)
+best = randomMotifSearch(dna2, k, t)
 min = score(best)
 for index in range(1000):  #randomizedMotifSearch wird in diesem Falle 1000 mal angesprochen
     print(index)
-    a = randomMotifSearch(dna, k, t)
+    a = randomMotifSearch(dna2, k, t)
     if score(a) < score(best):
         best = a
         min = score(a)  
